@@ -1,5 +1,4 @@
 import { Link } from '@tanstack/react-router'
-import { Wrench } from 'lucide-react'
 import { tools, categories } from '@/tools/registry'
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -9,7 +8,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4">
           <Link to="/" className="flex items-center gap-2 font-semibold">
             <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <Wrench size={16} />
+              <img src="/logo.svg" alt="DevTools logo" className="h-5 w-5" />
             </span>
             DevTools
           </Link>
