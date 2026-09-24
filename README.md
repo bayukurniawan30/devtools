@@ -1,7 +1,7 @@
 # DevToolbox — Free Online Dev Tools That Run 100% in Your Browser
 
 Vite + React + TypeScript + **TanStack Router** + **shadcn-style UI** (Tailwind).
-All 19 tools run 100% client-side. No backend, no login, no tracking.
+All 20 tools run 100% client-side. No backend, no login, no tracking.
 
 ## Stack
 - PNPM, Vite 5 (static `dist/`), React 18
@@ -17,8 +17,8 @@ pnpm build    # tsc + vite build -> dist/
 pnpm preview
 ```
 
-## Tools (19, all ready)
-- **Generators:** password, UUID, hash (MD5 via spark-md5, SHA-* via WebCrypto)
+## Tools (20, all ready)
+- **Generators:** password, UUID, hash (MD5 via spark-md5, SHA-* via WebCrypto), QR code (SVG/PNG download)
 - **Encode / Decode:** Base64, URL encoder, JWT decoder (HS* verify via WebCrypto)
 - **Formatters:** JSON formatter, regex tester, diff checker
 - **Converters:** timestamp, unit (length/weight/temp/data/speed), JSON⇄YAML, number base, color (HEX/RGB/HSL + WCAG contrast), markdown preview

@@ -21,6 +21,7 @@ import { UnitConverter } from './tools/UnitConverter'
 import { YamlConverter } from './tools/YamlConverter'
 import { NumberBaseConverter } from './tools/NumberBaseConverter'
 import { SubnetCalculator } from './tools/SubnetCalculator'
+import { QrGenerator } from './tools/QrGenerator'
 
 export function ToolPage({ toolId }: { toolId: string }) {
   const tool = tools.find((t) => t.id === toolId)
@@ -62,6 +63,7 @@ export function ToolPage({ toolId }: { toolId: string }) {
       {tool.id === 'yaml-converter' && <YamlConverter />}
       {tool.id === 'number-base-converter' && <NumberBaseConverter />}
       {tool.id === 'subnet-calculator' && <SubnetCalculator />}
+      {tool.id === 'qr-generator' && <QrGenerator />}
       {tool.status === 'stub' && (
         <Card>
           <CardHeader><CardTitle>Coming soon</CardTitle></CardHeader>

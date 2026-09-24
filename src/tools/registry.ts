@@ -14,6 +14,7 @@ export const categories: ToolCategory[] = ['Generators', 'Encode / Decode', 'For
 export const tools: ToolDef[] = [
   { id: 'password-generator', name: 'Password Generator', description: 'Random passwords, crypto.getRandomValues only.', category: 'Generators', status: 'ready' },
   { id: 'uuid-generator', name: 'UUID Generator', description: 'UUID v4 bulk generate.', category: 'Generators', status: 'ready' },
+  { id: 'qr-generator', name: 'QR Generator', description: 'Text/URL → QR, SVG/PNG download.', category: 'Generators', status: 'ready' },
   { id: 'hash-generator', name: 'Hash Generator', description: 'MD5*, SHA-1/256/384/512 via WebCrypto.', category: 'Generators', status: 'ready' },
   { id: 'base64', name: 'Base64 Encode / Decode', description: 'Text ⇄ Base64, unicode-safe.', category: 'Encode / Decode', status: 'ready' },
   { id: 'url-encoder', name: 'URL Encoder', description: 'encodeURIComponent / decode.', category: 'Encode / Decode', status: 'ready' },
