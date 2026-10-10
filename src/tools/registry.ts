@@ -24,6 +24,8 @@ export const tools: ToolDef[] = [
   { id: 'timestamp-converter', name: 'Timestamp Converter', description: 'Unix ⇄ ISO ⇄ local date.', category: 'Converters', status: 'ready' },
   { id: 'unit-converter', name: 'Unit Converter', description: 'Length, weight, temp, data, speed.', category: 'Converters', status: 'ready' },
   { id: 'yaml-converter', name: 'JSON ⇄ YAML', description: 'Convert both ways, errors shown.', category: 'Converters', status: 'ready' },
+  { id: 'html-to-jsx', name: 'HTML → JSX Component', description: 'Convert HTML and SVG to JSX, with inline styles and a React component wrapper.', category: 'Converters', status: 'ready' },
+  { id: 'svg-viewer', name: 'SVG Viewer', description: 'Paste or open SVG files, preview, zoom, and inspect on light or dark backgrounds.', category: 'Formatters', status: 'ready' },
   { id: 'number-base-converter', name: 'Number Base', description: 'Dec/hex/oct/bin + text⇄hex.', category: 'Converters', status: 'ready' },
   { id: 'subnet-calculator', name: 'Subnet Calculator', description: 'CIDR → network, mask, hosts.', category: 'Network', status: 'ready' },
   { id: 'color-converter', name: 'Color Converter', description: 'HEX ⇄ RGB ⇄ HSL + contrast.', category: 'Converters', status: 'ready' },

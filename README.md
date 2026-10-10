@@ -1,7 +1,7 @@
 # DevToolbox — Free Online Dev Tools That Run 100% in Your Browser
 
 Vite + React + TypeScript + **TanStack Router** + **shadcn-style UI** (Tailwind).
-All 20 tools run 100% client-side. No backend, no login, no tracking.
+All 22 tools run 100% client-side. No backend, no login, no tracking.
 
 ## Stack
 - PNPM, Vite 5 (static `dist/`), React 18
@@ -23,11 +23,11 @@ The rewrite in `vercel.json` serves `index.html` for `/t/*` requests so
 direct links and page refreshes reach TanStack Router. Redeploy after changing
 this configuration.
 
-## Tools (20, all ready)
+## Tools (22, all ready)
 - **Generators:** password, UUID, hash (MD5 via spark-md5, SHA-* via WebCrypto), QR code (SVG/PNG download)
 - **Encode / Decode:** Base64, URL encoder, JWT decoder (HS* verify via WebCrypto)
-- **Formatters:** JSON formatter, regex tester, diff checker
-- **Converters:** timestamp, unit (length/weight/temp/data/speed), JSON⇄YAML, number base, color (HEX/RGB/HSL + WCAG contrast), markdown preview
+- **Formatters:** JSON formatter, regex tester, diff checker, SVG viewer (paste/file, zoom, backgrounds, SVG download)
+- **Converters:** timestamp, unit (length/weight/temp/data/speed), JSON⇄YAML, HTML→JSX component, number base, color (HEX/RGB/HSL + WCAG contrast), markdown preview
 - **CSS:** box-shadow, gradient, easing/cubic-bezier visualizer
 - **Network:** subnet/CIDR calculator
 
@@ -37,3 +37,8 @@ this configuration.
 3. Wire it in `src/pages/ToolPage.tsx` + flip to `status: 'ready'`
 
 Conventions: copy buttons use `<Copy />` icon on the left; pickers use `react-colorful`.
+
+The HTML→JSX converter is at `/t/html-to-jsx`. It supports JSX-only output or
+a named function component, HTML/SVG attributes, inline styles, comments, and
+initial form values. Scripts and inline event handlers need manual migration;
+the converter shows notes when it omits them. Run `pnpm test` for conversion tests.

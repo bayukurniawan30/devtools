@@ -31,7 +31,7 @@ export function Home() {
                     <CardHeader>
                       <CardTitle className="flex items-center justify-between text-base">
                         {t.name}
-                        {t.status === 'ready' ? <Badge>ready</Badge> : <Badge variant="secondary">soon</Badge>}
+                        {t.status === 'stub' && <Badge variant="secondary">Coming soon</Badge>}
                       </CardTitle>
                       <CardDescription>{t.description}</CardDescription>
                     </CardHeader>

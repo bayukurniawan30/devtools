@@ -22,6 +22,8 @@ import { YamlConverter } from './tools/YamlConverter'
 import { NumberBaseConverter } from './tools/NumberBaseConverter'
 import { SubnetCalculator } from './tools/SubnetCalculator'
 import { QrGenerator } from './tools/QrGenerator'
+import { HtmlToJsx } from './tools/HtmlToJsx'
+import { SvgViewer } from './tools/SvgViewer'
 
 export function ToolPage({ toolId }: { toolId: string }) {
   const tool = tools.find((t) => t.id === toolId)
@@ -64,6 +66,8 @@ export function ToolPage({ toolId }: { toolId: string }) {
       {tool.id === 'number-base-converter' && <NumberBaseConverter />}
       {tool.id === 'subnet-calculator' && <SubnetCalculator />}
       {tool.id === 'qr-generator' && <QrGenerator />}
+      {tool.id === 'html-to-jsx' && <HtmlToJsx />}
+      {tool.id === 'svg-viewer' && <SvgViewer />}
       {tool.status === 'stub' && (
         <Card>
           <CardHeader><CardTitle>Coming soon</CardTitle></CardHeader>

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
@@ -20,6 +21,7 @@
     "dompurify": "^3.4.15",
     "lucide-react": "^0.454.0",
     "marked": "^18.0.13",
+    "property-information": "^7.2.0",
     "react": "^18.3.1",
     "react-colorful": "^5.8.1",
     "react-dom": "^18.3.1",
@@ -36,6 +38,7 @@
     "@types/spark-md5": "^3.0.5",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "jsdom": "^30.1.2",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
     "tailwindcss-animate": "^1.0.7",
