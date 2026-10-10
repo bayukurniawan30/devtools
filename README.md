@@ -17,6 +17,12 @@ pnpm build    # tsc + vite build -> dist/
 pnpm preview
 ```
 
+## Deploy to Vercel
+Use `pnpm build` as the build command and `dist` as the output directory.
+The rewrite in `vercel.json` serves `index.html` for `/t/*` requests so
+direct links and page refreshes reach TanStack Router. Redeploy after changing
+this configuration.
+
 ## Tools (20, all ready)
 - **Generators:** password, UUID, hash (MD5 via spark-md5, SHA-* via WebCrypto), QR code (SVG/PNG download)
 - **Encode / Decode:** Base64, URL encoder, JWT decoder (HS* verify via WebCrypto)
